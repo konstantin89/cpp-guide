@@ -11,6 +11,9 @@
 //     Move Constructor (to efficiently transfer ownership of resources).
 //     Move Assignment Operator (to efficiently assign the value of one object to another).
 
+// Important! When you create one of the rule of five, it will prevent compiler creating the other constructors!
+//            You can use 'default' to explicitly ask compiler to generate those.
+
 class Buffer {
 private:
     char* mData;
