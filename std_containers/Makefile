@@ -1,8 +1,8 @@
 CC = g++
 CFLAGS = -std=c++17 -Wall -Wextra
 
-app: Array.o main.o ForwardList.o examples.h
-	$(CC) $(CFLAGS) Array.o main.o ForwardList.o -o app
+app: Array.o main.o ForwardList.o List.o examples.h
+	$(CC) $(CFLAGS) Array.o main.o ForwardList.o List.o -o app
 
 main.o: main.cpp examples.h
 	$(CC) $(CFLAGS) -c main.cpp -o main.o
@@ -13,6 +13,9 @@ Array.o: Array.cpp examples.h
 ForwardList.o: ForwardList.cpp examples.h
 	$(CC) $(CFLAGS) -c ForwardList.cpp -o ForwardList.o
 
+List.o: List.cpp examples.h
+	$(CC) $(CFLAGS) -c List.cpp -o List.o
+
 .PHONY: clean
 clean:
-	rm -f app Array.o main.o
+	rm -f app *.o
