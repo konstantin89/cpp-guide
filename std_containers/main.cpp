@@ -13,5 +13,8 @@ int main()
     // Doubly linked list
     ListExample();
 
+    // Priority queue is Heap data structure implementation.
+    PriorityQueueExample();
+
     return 0;
 }
