@@ -1,24 +1,22 @@
-CC = g++
-CFLAGS = -std=c++17 -Wall -Wextra
+CXX = g++
+CXXFLAGS = -std=c++17 -Wall -Wextra
 
-app: Array.o main.o ForwardList.o List.o PriorityQueue.o examples.h
-	$(CC) $(CFLAGS) Array.o main.o ForwardList.o List.o PriorityQueue.o -o app
+SRCS = $(wildcard *.cpp)
+OBJS = $(SRCS:.cpp=.o)
 
-main.o: main.cpp examples.h
-	$(CC) $(CFLAGS) -c main.cpp -o main.o
+EXECUTABLE = app
 
-Array.o: Array.cpp examples.h
-	$(CC) $(CFLAGS) -c Array.cpp -o Array.o
+# Default target: build the executable
+all: $(EXECUTABLE)
 
-ForwardList.o: ForwardList.cpp examples.h
-	$(CC) $(CFLAGS) -c ForwardList.cpp -o ForwardList.o
+# Rule to build the executable
+$(EXECUTABLE): $(OBJS)
+	$(CXX) $(CXXFLAGS) $(OBJS) -o $@
 
-List.o: List.cpp examples.h
-	$(CC) $(CFLAGS) -c List.cpp -o List.o
+# Rule to compile source files to object files
+%.o: %.cpp
+	$(CXX) $(CXXFLAGS) -c $< -o $@
 
-PriorityQueue.o: PriorityQueue.cpp examples.h
-	$(CC) $(CFLAGS) -c PriorityQueue.cpp -o PriorityQueue.o
-
-.PHONY: clean
+# Clean target: remove object files and the executable
 clean:
-	rm -f app *.o
+	rm -f $(OBJS) $(EXECUTABLE)

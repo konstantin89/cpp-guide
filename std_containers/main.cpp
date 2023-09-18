@@ -16,5 +16,11 @@ int main()
     // Priority queue is Heap data structure implementation.
     PriorityQueueExample();
 
+    // Double-ended queue (efficient push to front and end)
+    DequeExample();
+
+    // Hash table based map
+    UnorderedMapExample();
+
     return 0;
 }

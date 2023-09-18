@@ -7,3 +7,7 @@ void ForwardListExample();
 void ListExample();
 
 void PriorityQueueExample();
+
+void DequeExample();
+
+void UnorderedMapExample();

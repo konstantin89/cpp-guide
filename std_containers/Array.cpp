@@ -59,6 +59,8 @@ static void Fibonacci()
 
 void ArrayExample()
 {
+    // std::array is stack based static memory array (compile time define size)
+
     Fibonacci();
     TwoDimensionalArray();
 }
