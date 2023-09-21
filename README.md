@@ -1,5 +1,12 @@
 # cpp-guide
 
+## C++ features by vecsion
+
+### C++ 17
+#### std::pmr::polymorphic_allocator
+#### std::optional
+
+
 ## Containers
 
 ### Sequence Containers
