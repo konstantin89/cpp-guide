@@ -1,11 +1,17 @@
 # cpp-guide
 
-## C++ features by vecsion
+[My CPP templates notes](https://github.com/konstantin89/cpp-templates)
+
+## C++ features by version
 
 ### C++ 17
 #### std::pmr::polymorphic_allocator
 #### std::optional
+#### Class template argument deduction
 
+### C++ 20
+#### Template lambdas
+#### Constraints and concepts (for templates)
 
 ## Containers
 
