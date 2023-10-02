@@ -1,6 +1,8 @@
 # cpp-guide
 
-[My CPP templates notes](https://github.com/konstantin89/cpp-templates)
+[My CPP templates notes](https://github.com/konstantin89/cpp-templates)  
+
+[CPP insights - C++ generated code explorer](https://cppinsights.io/)  
 
 ## C++ features by version
 
