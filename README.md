@@ -6,6 +6,9 @@
 
 ## C++ features by version
 
+### C++11
+#### Variadic length templates
+
 ### C++ 17
 #### std::pmr::polymorphic_allocator
 #### std::optional
@@ -14,6 +17,7 @@
 ### C++ 20
 #### Template lambdas
 #### Constraints and concepts (for templates)
+#### typename is implicit in some cases (From template meta programming with C++)
 
 ## Containers
 
