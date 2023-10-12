@@ -13,11 +13,16 @@
 #### std::pmr::polymorphic_allocator
 #### std::optional
 #### Class template argument deduction
+#### constexpr if (SFINAE feature - compile time if statement)
 
 ### C++ 20
 #### Template lambdas
 #### Constraints and concepts (for templates)
 #### typename is implicit in some cases (From template meta programming with C++)
+#### std::jthread (joinable thread)
+#### std::atomic wait and notify
+#### std::atomic_ref atomic reference object. std::atomic can't hold T& types.
+#### std::atomic<shared_ptr<T>> We can store shared_ptr in atomic variable.
 
 ## Containers
 
