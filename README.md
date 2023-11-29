@@ -5,17 +5,30 @@
 [CPP insights - C++ generated code explorer](https://cppinsights.io/)  
 
 ## C++ features by version
+[Full list -  CPP features by standard](https://github.com/AnthonyCalandra/modern-cpp-features)
 
 ### C++11
 #### Variadic length templates
 
+### C++14
+#### Generic lambda expressions
+#### Lambda capture initializers
+#### Return type deduction
+#### Variable templates (variables that are templates)
+#### std::make_unique
+
 ### C++ 17
-#### std::pmr::polymorphic_allocator
+#### std::pmr::polymorphic_allocator (with std::pmr::memory_resource)
 #### std::optional
+#### std::filesystem
 #### Class template argument deduction
 #### constexpr if (SFINAE feature - compile time if statement)
+#### constexpr lambda
+#### std::not_fn (function that returns NOT of its param)
 
 ### C++ 20
+#### concepts (Concepts are named compile-time predicates which constrain types)
+#### coroutines (special functions that can have their execution suspended and resumed)
 #### Template lambdas
 #### Constraints and concepts (for templates)
 #### typename is implicit in some cases (From template meta programming with C++)
